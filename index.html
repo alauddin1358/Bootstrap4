@@ -42,7 +42,14 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+                    <div class="row ">
+                        <div class="col-12 col-sm-6">
+                            <img src="img/logo.png" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-sm-6 m-auto">
+                            <a role="button" class="btn btn-warning btn-sm btn-block" href="#reserveTableForm"> Reserve Table</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,9 +82,19 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-12 col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                            <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, 
+                                six enticing appetizers, six main entrees and five choicest desserts. 
+                                Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center"
+                                src="img/buffet.png" alt="Buffet">
+                </div>
             </div>
+            
+            
         </div>
 
         <div class="row row-content align-items-center">
@@ -99,6 +116,78 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-8 offset-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form id="reserveTableForm">
+                            <div class="form-group row">
+                                <div class="col-md-2">
+                                    Number of Guests
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="form-check-inline">
+                                         <input type="radio" class="form-check-input" name="guests" id="one" value="gOne">
+                                         <label class="form-check-label" for="one">
+                                             1
+                                           </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" name="guests" id="two" value="gTwo">
+                                        <label class="form-check-label" for="two">
+                                            2
+                                          </label>
+                                   </div>
+                                   <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" name="guests" id="three" value="gThree">
+                                        <label class="form-check-label" for="three">
+                                            3
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" name="guests" id="four" value="gFour">
+                                        <label class="form-check-label" for="four">
+                                         4
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" name="guests" id="five" value="gFive">
+                                            <label class="form-check-label" for="five">
+                                            5
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" name="guests" id="six" value="gSix">
+                                        <label class="form-check-label" for="six">
+                                        6
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="dateInput" class="col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-md-5">
+                                    <input required="" type="text" class="form-control" id="dateInput"  placeholder="Date" 
+                                        onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                                  
+                                </div>
+                                <div class="col-md-5">
+                                    <input class="form-control" type="text" id="timeInput" placeholder="Time" 
+                                         onfocus="(this.type='time')" onblur="(this.type='text')">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12 offset-2">
+                                    <button class="btn btn-primary" type="submit">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 
